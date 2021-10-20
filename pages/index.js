@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Navigation } from '../components/Navigation'
 
@@ -11,9 +10,10 @@ export default function Home() {
         <meta name="description" content="This is GRAMMY Website" />
         <link rel="icon" href="/headicon.png" />
       </Head>
-      <div>
+      <div className={styles.mainnav}>
         <Navigation/>
       </div>
+      
     </div>
   )
 }

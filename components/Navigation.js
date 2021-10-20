@@ -1,23 +1,33 @@
 import { Dropdown } from "./Dropdown";
 import Image from "next/dist/client/image";
 import glogo from "../public/grammylogo.png";
-import Search from "./search";
+import Modal from '../components/Modal'
+
+
+import sicon from "../public/search.svg";
 import styles from "../styles/Home.module.css";
-import Navlinks from "./navlinks";
+import { useState } from "react";
 import Link from "next/dist/client/link";
 export const Navigation = () => {
+    const [dropdisclicked,setdropdclicked]=useState(false)
+    const onDropClick=()=>{
+      setdropdclicked(!dropdisclicked)
+      
+    }
   return (
     <>
       <div className={styles.nav}>
+        
+      
         <div className="menu-logo">
             <ul className={styles.menu}>
-          <li><Dropdown /></li>
+          <li onClick={onDropClick} ><Dropdown/></li>
           <li className={styles.gram}><Image
             className={styles.grlogo}
             src={glogo}
             alt="agin-no-image"
-            width="130px"
-            height="50px"
+            width="160px"
+            height="60px"
           /></li>
           </ul>
         </div>
@@ -60,11 +70,15 @@ export const Navigation = () => {
 
             <li className={styles.simg}>
             <Link href="/Search">
-                <a><Search/></a>
+                <a><Image  className={styles.simage} src={sicon} alt="sorry-no-image-found"/></a>
             </Link>
             </li>
           </ul>
         </div>
+        
+      </div>
+      <div className={styles.mdl}>
+         {dropdisclicked? <Modal onClick={onDropClick}/> : null}
       </div>
     </>
   );
