@@ -30,7 +30,7 @@
     height: 100vh;
     width: 25%;
     top: 0;
-    
+    z-index: 1;
 }
 .botn{
     display: flex;
@@ -46,9 +46,13 @@
     
     
 }
+.botn:hover{
+    cursor: pointer;
+}
 .btn1:hover,.btn2:hover{
     color:#1192fd;
     background-color: white;
+    
 }
 .btn1{
     margin-left:20% ;

@@ -1,0 +1,41 @@
+.footr{
+    background:linear-gradient(135deg,#7544ce 25%, #1192fd 75%);
+    color:white;
+    height: 80vh;
+}
+.flist{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 9.5%;
+    align-items: flex-start;
+    list-style: none;
+    padding-right: 3%;
+}
+.slist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.slist li{
+    padding-top:20px ;
+    font-weight: bold;
+    font-size:0.8rem;
+}
+.slist h1{
+    font-size: 1.1rem;
+}
+.fl{
+    margin-left: 5%;
+}
+.cntent{
+    font-size: 0.7em;
+    text-align: start;
+    margin-left: 5%;
+}
+.fimglist{
+    display: flex;
+    justify-content: space-between;
+}
+.flists{
+    display: flex;
+}

@@ -7,7 +7,7 @@
   padding-left: 30px;
 }
 .mainnav{
-  height: 60%;
+  height:10%;
 }
 .nav{
   display: flex;
@@ -70,15 +70,54 @@
   max-width: 10px;
   max-height: 10px;
 }
-.mdl{
- height: 100vh; 
-}
 .drspan{
   height: 2px;
   width: 2px;
   color: blue;
 }
 .dimg{ filter: invert(100%); }
+
+.gallry{
+  display: flex;
+  
+}
+.fimage{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 56vh;
+  background-color: violet;
+}
+.mgk2{
+  width: 70%;
+  height: 57vh;
+}
+.parent1{
+  position: relative;
+  height: 38vh;
+}
+.child1{
+  position:absolute;
+  top: 74%;
+  font-size: 0.6em;
+  color: white;
+}
+.parent2{
+  position: relative;
+}
+.child2{
+  font-size: 0.6em;
+  color:white;
+  position: absolute;
+  top:83%;
+}
+.child3{
+  position: absolute;
+  top:75%;
+  left: 40%;
+  width: 40%;
+}
+
 
 @media (max-width: 600px) {
   .grid {
